@@ -1,0 +1,55 @@
+body {
+  background-image: url("../resources/background.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+nav {
+  position: absolute;
+}
+
+.container  {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.container .row {
+  margin: 0 auto;
+}
+
+.page {
+  width: 100%;
+  height: 100vh;
+}
+
+.pink-salmon {
+  background-color: #fcb9b9;
+}
+
+.down-arrow-container {
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  position: absolute;
+}
+
+.down-arrow {
+  font-size: 50pt;
+  animation: bobble 2s infinite;
+}
+
+@keyframes bobble {
+  from {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
