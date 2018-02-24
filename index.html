@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset=utf-8>
-    <title>You're Hired Series</title>
+    <meta charset="utf-8">
+    <title>"You're Hired" Series</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel=stylesheet href=css/materialize.min.css>
-    <link rel=stylesheet href=css/main.css>
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/main.css">
 
-    <script src=js/jquery.min.js></script>
-    <script src=js/materialize.min.js></script>
-    <script src=js/index.js></script>
-    <script src=js/schedule.js></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/dateHelpers.js"></script>
+    <script src="js/nextEvent.js"></script>
+    <script src="js/fullSchedule.js"></script>
+
+    <script src="data/schedule.js"></script>
   </head>
   <body class="white-text pink-salmon">
     <nav>
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo center">Logo</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="sass.html">Sass</a></li>
-          <li><a href="sass.html">Sass</a></li>
-          <li><a href="sass.html">Sass</a></li>
-        </ul>
+        <a href="#" class="brand-logo center">Interview Workshop</a>
       </div>
     </nav>
     <div class="page">
-      <div class="container">
+      <div class="container centered-card">
         <div class="row valign-wrapper">
           <div class="card">
             <div class="card-content next-class">
@@ -37,11 +35,52 @@
           </div>
         </div>
       </div>
-      <!-- <div class="down-arrow-container">
+      <div class="down-arrow-container">
         <i class="material-icons down-arrow">keyboard_arrow_down</i>
-      </div> -->
+      </div>
     </div>
-    <!-- <div class=page>
-    </div> -->
+    <div class="page">
+      <div class="container centered-card">
+        <div class="row valign-wrapper">
+          <div class="card">
+            <div class="card-content schedule">
+              <span class="card-title">Schedule</span>
+              <table class="centered">
+                <tbody>
+                  <tr class="template popup-link modal-trigger" href="#calendar-modal">
+                    <td>
+                      <span class="cell-day-of-week"></span>,
+                      <span class="cell-month"></span>/<span class="cell-day"></span>
+                      <span class="cell-description hidden"></span>
+                    </td>
+                    <td>
+                      <span class="cell-title">Working Title 1</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="calendar-modal" class="modal">
+      <div class="modal-content">
+        <h4 class="modal-title black-text">Modal Header</h4>
+        <p class="modal-description grey-text">A bunch of text</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect btn-flat">Close</a>
+      </div>
+    </div>
+    <footer class="page-footer">
+      <div class="footer-copyright">
+        <div class="container center">
+          Made with love by
+          <a href="https://github.com/PrivacyPolicy/" target="_blank"
+            class="grey-text text-lighten-4">Gabe</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -2,28 +2,31 @@ body {
   background-image: url("../resources/background.png");
   background-repeat: repeat;
   background-attachment: fixed;
+  background-size: 500px;
+  background-position: center;
+  overflow-y: scroll !important;
 }
 
 nav {
   position: absolute;
 }
 
-.container  {
+.centered-card  {
   display: flex;
   position: absolute;
-  top: 0;
   left: 0;
   height: 100%;
   width: 100%;
 }
 
-.container .row {
+.centered-card .row {
   margin: 0 auto;
 }
 
 .page {
   width: 100%;
   height: 100vh;
+  min-height: 800px;
 }
 
 .pink-salmon {
@@ -52,4 +55,63 @@ nav {
   to {
     transform: translateY(0);
   }
+}
+
+.cell-description {
+  display: none;
+}
+
+.schedule {
+  width: 50vw;
+  min-width: 200px;
+}
+
+.schedule tr {
+  position: relative;
+  display: table-row;
+}
+
+.schedule tr:hover {
+  background: #fcb9b9;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.schedule td:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.schedule td:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.popup-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  line-height: 50px;
+  white-space: nowrap;
+}
+
+tr.template {
+  display: none;
+}
+
+tr.past {
+  color: #ddd;
+}
+
+.schedule table tbody tr td:first-child {
+  text-align: left;
+}
+
+.container {
+  max-width: none;
 }
